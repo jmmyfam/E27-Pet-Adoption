@@ -1,5 +1,6 @@
 body {
-  background-color: antiquewhite;
+  background-image: linear-gradient(white, rgb(204, 163, 238), rgb(172, 66, 243));
+  background-repeat: no-repeat;
 }
 
 #app {
@@ -7,7 +8,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  
+  padding-top: 20px;
 }
 
 .card {
@@ -22,4 +23,17 @@ body {
 
 .skills {
   font-size: 80%;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgba(201, 83, 236, 0.473);
+  
+}
+
+button {
+  margin-right: 18px;
 }
