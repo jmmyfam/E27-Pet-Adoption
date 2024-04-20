@@ -48,6 +48,18 @@ p, h1 {
   
 }
 
+#home {
+  border-radius: 70px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.404);
+  margin-left: 500px;
+  border: 1px solid;
+}
+
+
 button {
   margin-right: 18px;
 }
