@@ -63,3 +63,10 @@ p, h1 {
 button {
   margin-right: 18px;
 }
+
+.form_select {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}

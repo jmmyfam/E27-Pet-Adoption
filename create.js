@@ -274,7 +274,7 @@ const filter = (array, petType) => {
   return petArray;
 };
 
-const form = document.querySelector('form');
+const form = document.querySelector('#forms');
 
 const addPet = (e) => {
   e.preventDefault();
@@ -285,17 +285,16 @@ const newPetObj = {
   color: document.querySelector("#color").value,
   specialSkill: document.querySelector("#specialSkill").value,
   type: document.querySelector("#type").value,
-  image: document.querySelector("#image").value
+  imageUrl: document.querySelector("#image").value
 };
 
 pets.push(newPetObj);
 petsToRender(pets);
 form.reset();
 
-};
+}
 
-const submitButton = document.querySelector("#form-submit");
-submitButton.addEventListener("click", addPet);
+form.addEventListener('submit', addPet);
 
 
 
