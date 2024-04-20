@@ -241,13 +241,12 @@ const pets = [
     }
   ];
 
-
-  const renderToDom = (divId, htmlToRender) => {
-    const selectedDiv = document.querySelector(divId);
-    selectedDiv.innerHTML = htmlToRender
+  const renderToDOM = (divID, renderHTML) => {
+    const selectedDiv = document.querySelector(divID);
+    selectedDiv.innerHTML = renderHTML
   };
   
-  const cardsOnDom = (array) => {
+  const petsToRender = (array) => {
     let html = '';
     array.forEach (pet => {
       html += `<div class="card" style="width: 18rem; margin-top: 20px">
@@ -260,7 +259,7 @@ const pets = [
     </div>`;
     })
   
-    renderToDom('#app', html);
+    renderToDOM('#app', html);
     
   };
   
@@ -281,21 +280,21 @@ const pets = [
   const showDog = document.querySelector('#viewDogs');
   
   showAll.addEventListener('click', () => {
-    cardsOnDom(pets);
+    petsToRender(pets);
   });
   
   
   showDino.addEventListener('click', () => {
     const dinos = filter(pets, 'dino');
-    cardsOnDom(dinos);
+    petsToRender(dinos);
   });
   
   showCat.addEventListener('click', () => {
     const cats = filter(pets, 'cat');
-    cardsOnDom(cats);
+    petsToRender(cats);
   });
   
   showDog.addEventListener('click', () => {
     const dogs = filter(pets, 'dog');
-    cardsOnDom(dogs);
+    petsToRender(dogs);
   });

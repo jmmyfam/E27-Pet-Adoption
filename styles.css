@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 html, body {
   margin: 0;
@@ -12,8 +13,9 @@ body {
   background-attachment: fixed;
 }
 
-h1 {
+h2 {
   text-align: center;
+  text-decoration: underline;
   font-family: "Fuzzy Bubbles", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -33,13 +35,8 @@ h1 {
   margin-bottom: 5px;
 }
 
-.card-title {
-  text-decoration: underline;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.skills {
-  font-size: 80%;
+p, h1 {
+  font-family: "Quicksand", sans-serif;
 }
 
 .btns {
