@@ -263,16 +263,6 @@ const petsToRender = (array) => {
   
 };
 
-const filter = (array, petType) => {
-  const petArray = [];
-
-  for (const pet of array) {
-    if (pet.type === petType) {
-      petArray.push(pet);
-    }
-  }
-  return petArray;
-};
 
 const form = document.querySelector('#forms');
 
