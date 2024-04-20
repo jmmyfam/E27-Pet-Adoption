@@ -1,6 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-image: linear-gradient(white, rgb(204, 163, 238), rgb(172, 66, 243));
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 #app {
@@ -9,6 +25,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 20px;
+  
 }
 
 .card {
