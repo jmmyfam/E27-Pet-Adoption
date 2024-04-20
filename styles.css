@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 html, body {
   margin: 0;
@@ -12,8 +13,9 @@ body {
   background-attachment: fixed;
 }
 
-h1 {
+h2 {
   text-align: center;
+  text-decoration: underline;
   font-family: "Fuzzy Bubbles", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -33,13 +35,8 @@ h1 {
   margin-bottom: 5px;
 }
 
-.card-title {
-  text-decoration: underline;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.skills {
-  font-size: 80%;
+p, h1 {
+  font-family: "Quicksand", sans-serif;
 }
 
 .btns {
@@ -51,6 +48,25 @@ h1 {
   
 }
 
+#home {
+  border-radius: 70px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.404);
+  margin-left: 500px;
+  border: 1px solid;
+}
+
+
 button {
   margin-right: 18px;
+}
+
+.form_select {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding-left: 10px;
 }
