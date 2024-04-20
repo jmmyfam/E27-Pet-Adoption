@@ -255,7 +255,7 @@ const petsToRender = (array) => {
       <div class="card-body">
       <p>${pet.specialSkill}</p>
       </div>
-      
+      <button class="btn btn-outline-danger" id="delete--${pet.id}">Delete</button>
   </div>`;
   })
 
@@ -285,6 +285,19 @@ form.reset();
 }
 
 form.addEventListener('submit', addPet);
+
+const app = document.querySelector("#app");
+
+app.addEventListener('click', (e) => {
+  if (e.target.id.includes('delete')) {
+    const [, id] = e.target.id.split("--")
+
+    const index = pets.findIndex(e => e.id === Number(id));
+    pets.splice(index, 1);
+
+    petsToRender(pets);
+  }
+});
 
 
 
